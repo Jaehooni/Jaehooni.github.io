@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Jekyll!"
-date: {{ page.date | date: "%m/%d/%Y" }}
+date: 2019-12-10 22:16:45 -0400
 categories: jekyll update
 ---
 This is my first post!
