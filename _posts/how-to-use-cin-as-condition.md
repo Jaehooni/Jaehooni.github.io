@@ -1,5 +1,5 @@
 ---
-title: "cin을 조건문으로 사용할 수 있다!"
+title: "cin can be conditional statement"
 date: 2021-01-28 14:10:45 -0400
 categories: algorithm
 ---
