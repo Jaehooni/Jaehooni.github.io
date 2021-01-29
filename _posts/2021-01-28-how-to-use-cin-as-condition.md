@@ -1,5 +1,5 @@
 ---
-title: "cin을 조건문으로 이용할 수 있다."
+title: "[Q 10951]cin을 조건문으로 이용할 수 있다."
 date: 2021-01-28 14:10:45 -0400
 categories: algorithm
 ---
