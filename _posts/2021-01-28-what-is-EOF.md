@@ -1,5 +1,5 @@
 ---
-title: "EOF 활용"
+title: "[EOF 활용"
 date: 2021-01-28 14:25:00 -0400
 categories: algorithm
 ---
