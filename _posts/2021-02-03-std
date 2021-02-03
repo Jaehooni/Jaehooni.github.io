@@ -1,0 +1,41 @@
+---
+title:[Q 10818] using namespace std;를 남용하면 안되는 이유 중 하나...
+date: 2021-02-03 11:33:00 -0400
+categories: algorithm
+---
+10818번 도중 reference to ‘max’ is ambiguous 라는 오류로 컴파일 에러가 뜸
+
+why? 내가 사용한 변수 명인 max가 std::max랑 혼용되어서.. 주의!!
+
+오류가 뜬 해당 코드
+
+```cpp
+#include <iostream>
+using namespace std;
+int max = -1000001, min = 1000001, numberTimes, number;
+int main(){
+    cin >> numberTimes;
+    for (int i = 0; i < numberTimes; i++){
+        cin >> number;
+        if (number > max) max = number;
+        if (number < min) min = number;
+    }
+    
+    cout << min << " " << max;
+    return 0;
+}
+```
+
+error: reference to ‘max’ is ambiguous 란 오류가 떴다...
+
+충돌이 난 해당 std::max는 두 변수를 비교하는 함수였다.
+
+```cpp
+template<class T> 
+const T& max(const T& a, const T& b)
+{
+    return (a < b) ? b : a;
+}
+```
+
+괜히~ using namespace std; 를 자제하라는 것이 아닌가 보다~~~~
