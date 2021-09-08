@@ -28,7 +28,7 @@ apt install npm으로 설치를 먼저 했는데...
 이후 다시   
    
 ```sh
-# npm install socket.io
+# npm install -g socket.io
 ```
 를 실행하니 정상적으로 작동하는 것을 발견~~~   
    
